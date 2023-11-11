@@ -10,7 +10,11 @@ In /detections directory
 
 ## File Explanations:
 UAV_FasterRCNN.py: Used for inference
+
 XML_To_TFRecord.py: Converts XML files into training and validation TFRecord files
+
 download_model.py: Used to download base model
+
 model_main_tf2.py: Slightly modified TF2 Training Loop
+
 vids_to_frames: Extracts frames from video and saves them in a given directory
