@@ -16,7 +16,7 @@ model_main_tf2.py: Slightly modified TF2 Training Loop
 vids_to_frames: Extracts frames from video and saves them in a given directory
 
 ## Detections from Test Videos
-In /detections directory
+Sampled in /detections directory. There are too many to fit.
 
 ## Training Metrics
 ![Metrics 1](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/metrics_1.png)
