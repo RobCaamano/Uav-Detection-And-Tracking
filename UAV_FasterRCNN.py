@@ -7,6 +7,7 @@ import cv2
 import os
 from tqdm import tqdm
 import numpy as np
+import json
 
 # Load the trained Faster RCNN model
 config_path = 'C:/Users/caama/.keras/datasets/faster_rcnn_resnet101_v1_800x1333_uav/pipeline.config'
@@ -60,10 +61,14 @@ for path in test_frames_path:
         os.makedirs(detection_sub_path)
     
     frames = os.listdir(path)
+    frames.sort(key=lambda f: int(''.join(filter(str.isdigit, f))))
+    detected_positions = []
+
     for frame in tqdm(frames, desc=f"Processing frames in {path}"):
         frame_path = os.path.join(path, frame)
         img = cv2.imread(frame_path)
         img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        height, width, _ = img.shape
 
         # Convert img to float32 and normalize
         input_tensor = tf.convert_to_tensor(img_rgb, dtype=tf.float32)
@@ -72,20 +77,40 @@ for path in test_frames_path:
         # Detect objects in the frame
         detections = detect_fn(input_tensor)
 
-        # Visualize the detections
-        viz_utils.visualize_boxes_and_labels_on_image_array(
-            img,
-            detections['detection_boxes'].numpy()[0],
-            detections['detection_classes'].numpy()[0].astype(int),
-            detections['detection_scores'].numpy()[0],
-            category_index,
-            use_normalized_coordinates=True,
-            line_thickness=2,
-            skip_labels=True)
+        # Select the detection with the highest score
+        scores = detections['detection_scores'].numpy()[0]
+        boxes = detections['detection_boxes'].numpy()[0]
+        max_score_index = np.argmax(scores)
+        max_score = scores[max_score_index]
 
-        # Save the detections
-        if any(detections['detection_scores'].numpy()[0] > threshold):
+        if max_score > threshold:
+            box = boxes[max_score_index]
+            ymin, xmin, ymax, xmax = box
+
+            # Standardize positions to image size
+            x_center, y_center = (xmin + xmax) / 2, (ymin + ymax) / 2
+            detected_positions.append((x_center, y_center))
+
+            # Visualize the detection with the highest score
+            viz_utils.visualize_boxes_and_labels_on_image_array(
+                img_rgb,
+                np.array([detections['detection_boxes'].numpy()[0][max_score_index]]),
+                np.array([detections['detection_classes'].numpy()[0][max_score_index].astype(int)]),
+                np.array([max_score]),
+                category_index,
+                use_normalized_coordinates=True,
+                line_thickness=2,
+                skip_labels=True)
+
+            # Save the frame with visualization
+            img_bgr = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2BGR)
             detected_frame_path = os.path.join(detection_sub_path, frame)
-            cv2.imwrite(detected_frame_path, cv2.cvtColor(img, cv2.COLOR_RGB2BGR))
+            cv2.imwrite(detected_frame_path, img_bgr)
+
+    # Save detected positions to JSON file for path
+    json_path = f'./detected_positions_{os.path.basename(path)}.json'
+    with open(json_path, 'w') as f:
+        json.dump(detected_positions, f)
+    print(f"Saved detected positions to '{json_path}'")
 
 print("Detections completed")
