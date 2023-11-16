@@ -15,6 +15,8 @@ model_main_tf2.py: Slightly modified TF2 Training Loop
 
 vids_to_frames: Extracts frames from video and saves them in a given directory
 
+kalman_filter.py: Implements Kalman filter to track drone's trajectory. Compiles detections into a video with a line tracking the drone.
+
 ## Detections from Test Videos
 Samples in /detections directory. There are too many to fit.
 
