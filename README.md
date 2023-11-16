@@ -32,8 +32,7 @@ Present in /kf_vids directory
 ### Drone Tracking 1
 
 
-https://github.com/RobCaamano/Uav-Detection-And-Tracking/assets/65639885/73fa7541-8289-4073-93a1-1cc7213ae03c
-
+https://github.com/RobCaamano/Uav-Detection-And-Tracking/assets/65639885/eaf5e702-f3a6-4e5b-b7d6-4c06a39e6c6a
 
 
 ### Drone Tracking 2
