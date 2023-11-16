@@ -29,10 +29,18 @@ Samples in /detections directory. There are too many to fit.
 ## Detections Video with Kalman Filter
 
 ### Drone Tracking 1
-![Test Video 1](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/kf_vids/output1.avi)
+
+
+https://github.com/RobCaamano/Uav-Detection-And-Tracking/assets/65639885/73fa7541-8289-4073-93a1-1cc7213ae03c
+
+
 
 ### Drone Tracking 2
-![Test Video 2](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/kf_vids/output2.avi)
+
+
+https://github.com/RobCaamano/Uav-Detection-And-Tracking/assets/65639885/81024abb-f7ec-49d2-a071-c2120a5a9ea3
+
+
 
 ## Training Metrics
 ![Metrics 1](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/metrics_1.png)
