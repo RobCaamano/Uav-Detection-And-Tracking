@@ -29,7 +29,7 @@ vids_to_frames: Extracts frames from video and saves them in a given directory
 kalman_filter.py: Implements Kalman filter to track drone's trajectory. Compiles detections into a video with a line tracking the drone.
 
 
-## Demo Detections Videos with Kalman Filter <a id="demo-kalman"></a>
+## Demo Videos with Kalman Filter <a id="demo-kalman"></a>
 
 Both videos are available in this repo's [/kf_vids](https://github.com/RobCaamano/Uav-Detection-And-Tracking/tree/main/kf_vids) directory.
 
@@ -43,7 +43,7 @@ https://github.com/RobCaamano/Uav-Detection-And-Tracking/assets/65639885/eaf5e70
 https://github.com/RobCaamano/Uav-Detection-And-Tracking/assets/65639885/81024abb-f7ec-49d2-a071-c2120a5a9ea3
 
 
-## Demo Detections Images <a id="demo"></a>
+## Demo Images <a id="demo"></a>
 
 More samples are available in this repo's [./detections](https://github.com/RobCaamano/Uav-Detection-And-Tracking/tree/main/detections) directory.
 
