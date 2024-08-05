@@ -2,9 +2,21 @@
 <a href="https://github.com/tensorflow/models/tree/master/research/object_detection" target="_parent"><img src="https://img.shields.io/badge/TensorFlow-2.2-FF6F00?logo=tensorflow" alt="TF2 Object Detection"/></a>
 <a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md" target="_parent"><img src="https://img.shields.io/badge/TensorFlow-2.2-FF6F00?logo=tensorflow" alt="TF2 Model Zoo"/></a>
 
+## Sections
+
+- [About](#about)
+- [Files](#files)
+- [Demo Videos](#demo-kalman)
+- [Demo Images](#demo)
+- [Hugging Face Space](#space)
+- [Coqui TOS](#tos)
+
+## About <a id="about"></a>
+
 Utlizes TensorFlow2 Object Detection API with a finetune of TensorFlow's faster_rcnn_resnet101_v1_800x1333_coco17_gpu-8 model.
 
-## File Explanations:
+## Files <a id="files"></a>
+
 UAV_FasterRCNN.py: Used for inference
 
 XML_To_TFRecord.py: Converts XML files into training and validation TFRecord files
@@ -17,26 +29,30 @@ vids_to_frames: Extracts frames from video and saves them in a given directory
 
 kalman_filter.py: Implements Kalman filter to track drone's trajectory. Compiles detections into a video with a line tracking the drone.
 
-## Detections from Test Videos
-Samples in /detections directory. There are too many to fit.
 
-### Drone Tracking 1 Example Detection
+## Demo Detections Videos with Kalman Filter <a id="demo-kalman"></a>
+
+Available in this repo's [/kf_vids](https://github.com/RobCaamano/Uav-Detection-And-Tracking/tree/main/kf_vids) directory
+
+### Demo #1
+
 ![frame 0](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/detections/frame_0.jpg)
 
-### Drone Tracking 2 Example Detection
+### Demo #2
+
 ![frame 7547](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/detections/frame_7547.jpg)
 
-## Detections Video with Kalman Filter
+
+## Demo Detections <a id="demo"></a>
+
 Present in /kf_vids directory
 
-### Drone Tracking 1
-
+### Demo #1
 
 https://github.com/RobCaamano/Uav-Detection-And-Tracking/assets/65639885/eaf5e702-f3a6-4e5b-b7d6-4c06a39e6c6a
 
 
-### Drone Tracking 2
-
+### Demo # 2
 
 https://github.com/RobCaamano/Uav-Detection-And-Tracking/assets/65639885/81024abb-f7ec-49d2-a071-c2120a5a9ea3
 
