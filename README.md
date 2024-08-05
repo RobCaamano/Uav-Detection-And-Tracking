@@ -8,8 +8,7 @@
 - [Files](#files)
 - [Demo Videos](#demo-kalman)
 - [Demo Images](#demo)
-- [Hugging Face Space](#space)
-- [Coqui TOS](#tos)
+- [Training Metrics](#metrics)
 
 ## About <a id="about"></a>
 
@@ -32,20 +31,7 @@ kalman_filter.py: Implements Kalman filter to track drone's trajectory. Compiles
 
 ## Demo Detections Videos with Kalman Filter <a id="demo-kalman"></a>
 
-Available in this repo's [/kf_vids](https://github.com/RobCaamano/Uav-Detection-And-Tracking/tree/main/kf_vids) directory
-
-### Demo #1
-
-![frame 0](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/detections/frame_0.jpg)
-
-### Demo #2
-
-![frame 7547](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/detections/frame_7547.jpg)
-
-
-## Demo Detections <a id="demo"></a>
-
-Present in /kf_vids directory
+Both videos are available in this repo's [/kf_vids](https://github.com/RobCaamano/Uav-Detection-And-Tracking/tree/main/kf_vids) directory.
 
 ### Demo #1
 
@@ -57,8 +43,21 @@ https://github.com/RobCaamano/Uav-Detection-And-Tracking/assets/65639885/eaf5e70
 https://github.com/RobCaamano/Uav-Detection-And-Tracking/assets/65639885/81024abb-f7ec-49d2-a071-c2120a5a9ea3
 
 
+## Demo Detections Images <a id="demo"></a>
 
-## Training Metrics
+More samples are available in this repo's [./detections](https://github.com/RobCaamano/Uav-Detection-And-Tracking/tree/main/detections) directory.
+
+### Demo #1
+
+![frame 0](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/detections/frame_0.jpg)
+
+### Demo #2
+
+![frame 7547](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/detections/frame_7547.jpg)
+
+
+## Training Metrics <a id="metrics"></a>
+
 ![Metrics 1](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/metrics_1.png)
 
 ![Learning rate](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/lr.png)
