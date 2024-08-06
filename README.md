@@ -52,17 +52,16 @@ https://github.com/RobCaamano/Uav-Detection-And-Tracking/assets/65639885/81024ab
 
 More samples are available in this repo's [./detections](https://github.com/RobCaamano/Uav-Detection-And-Tracking/tree/main/detections) directory.
 
-### Demo #1
-
-![frame 0](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/detections/frame_0.jpg)
-
-### Demo #2
-
-![frame 7547](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/detections/frame_7547.jpg)
-
+| Demo #1 | Demo #2 |
+| -------- | ------- |
+| <img src="https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/detections/frame_0.jpg" width="600" height="350" /> | <img src="https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/detections/frame_7547.jpg" width="600" height="340" /> |
 
 ## Training Metrics <a id="metrics"></a>
 
-![Metrics 1](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/metrics_1.png)
+This project includes performance metrics to evaluate the effectiveness and accuracy of the UAV detection and tracking system. These metrics are visualized through a series of plots, displaying key metrics such as classification loss, localization loss, and learning rate. 
 
-![Learning rate](https://github.com/RobCaamano/Uav-Detection-And-Tracking/blob/main/lr.png)
+| <img src="https://github.com/user-attachments/assets/1780815b-1a01-40b1-a089-492662389c1e" height="250" /> | <img src="https://github.com/user-attachments/assets/b3b61926-e036-4899-b139-ad2060861767" height="250" /> | <img src="https://github.com/user-attachments/assets/8d683de1-b3b5-4ee0-974c-94acf6dc50df" height="250" /> | 
+| -------- | ------- | ------- |
+
+| <img src="https://github.com/user-attachments/assets/68f2ef66-22e3-4eaa-9217-44f526838e1a" height="220" /> | <img src="https://github.com/user-attachments/assets/1db79ff8-b13e-4c02-84aa-e3d5e8c27a2e" height="220" /> | <img src="https://github.com/user-attachments/assets/a1e02a5d-4df0-44c7-b62b-43caece245cf" height="220" /> | <img src="https://github.com/user-attachments/assets/8adae839-bd45-4f52-b98e-f53b2c5fc1c1" height="220" /> |
+| ------- | ------- | ------- | ------- |
