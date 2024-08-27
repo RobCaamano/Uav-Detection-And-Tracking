@@ -12,7 +12,7 @@
 
 ## About <a id="about"></a>
 
-The UAV Detection and Tracking project aims to identify and monitor unmanned aerial vehicles (UAVs) using advanced object detection and tracking techniques. It utlizes TensorFlow2 Object Detection API with a finetune of TensorFlow's '[faster_rcnn_resnet101_v1_800x1333_coco17_gpu-8](https://github.com/tensorflow/models/blob/master/research/object_detection/configs/tf2/faster_rcnn_resnet101_v1_800x1333_coco17_gpu-8.config)' model.
+The UAV Detection and Tracking project aims to identify and monitor unmanned aerial vehicles (UAVs) using advanced object detection and tracking techniques. It utilizes TensorFlow2 Object Detection API with a finetune of TensorFlow's '[faster_rcnn_resnet101_v1_800x1333_coco17_gpu-8](https://github.com/tensorflow/models/blob/master/research/object_detection/configs/tf2/faster_rcnn_resnet101_v1_800x1333_coco17_gpu-8.config)' model.
 
 - **Fine-Tuned Object Detection Model:** Utilizes a fine-tuned version of the TensorFlow Faster R-CNN ResNet101 model, optimized for detecting UAVs.
 
